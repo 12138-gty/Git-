@@ -662,6 +662,7 @@
             document.getElementById("chat-messages").innerHTML = `<div class="text-slate-500 text-xs">会话已清空，请输入新内容。</div>`;
         }
 
+        
         function escapeHtml(str) { return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
         function formatMarkdownToHtml(text) {
             let p = escapeHtml(text).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
